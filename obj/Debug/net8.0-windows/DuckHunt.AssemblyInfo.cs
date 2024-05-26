@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DuckHunt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+247f529e8406e800a80039a83bce0d9447e2e476")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4c21142d85e51f1875a436d89eae79d3571436b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DuckHunt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DuckHunt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
