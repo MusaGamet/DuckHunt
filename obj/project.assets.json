@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\DuckHunt\\DuckHunt\\DuckHunt.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\DuckHunt\\DuckHunt.csproj",
       "projectName": "DuckHunt",
-      "projectPath": "C:\\Users\\User\\Desktop\\DuckHunt\\DuckHunt\\DuckHunt.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\DuckHunt\\DuckHunt.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\DuckHunt\\DuckHunt\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\DuckHunt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
