@@ -1,5 +1,9 @@
 using DuckHunt.Properties;
 using System.Media;
+using System.Linq;
+using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 
 namespace DuckHunt
 {
@@ -13,17 +17,15 @@ namespace DuckHunt
         {
             InitializeComponent();
             InitializeStartScreen();
-            Bitmap bmp = new Bitmap("C:/Users/User/Desktop/DuckHunt/Resources/duck1.png");
-            Cursor crsr = new Cursor(bmp.GetHicon());
-            this.Cursor = crsr;
+            this.DoubleBuffered = true; // Включение двойной буферизации
         }
 
         private void Game_Result()
         {
-            if (key==true)
+            if (key == true)
             {
                 game_over.Visible = true;
-                startSound = new SoundPlayer("C:/Users/User/Desktop/DuckHunt/Resources/lose.wav"); // Убедитесь, что музыка добавлена в ресурсы
+                startSound = new SoundPlayer(Properties.Resources.lose);
                 startSound.PlayLooping();
                 timer1.Stop();
             }
@@ -32,7 +34,7 @@ namespace DuckHunt
         private void InitializeStartScreen()
         {
             // Инициализация и запуск музыки
-            startSound = new SoundPlayer("C:/Users/User/Desktop/DuckHunt/Resources/start.wav"); // Убедитесь, что музыка добавлена в ресурсы
+            startSound = new SoundPlayer(Properties.Resources.start);
             startSound.PlayLooping();
 
             this.Controls.Add(startPictureBox);
@@ -59,21 +61,29 @@ namespace DuckHunt
             this.KeyDown -= new KeyEventHandler(Form1_KeyDown);
             timer1.Start();
         }
+
         private void Hit()
         {
-            startSound = new SoundPlayer("C:/Users/User/Desktop/DuckHunt/Resources/duck_drop.wav"); // Убедитесь, что музыка добавлена в ресурсы
+            startSound = new SoundPlayer(Properties.Resources.duck_drop); // Убедитесь, что музыка добавлена в ресурсы
             startSound.Play();
         }
-        
 
         private void Shoot()
         {
-            startSound = new SoundPlayer("C:/Users/User/Desktop/DuckHunt/Resources/gunshot.wav"); // Убедитесь, что музыка добавлена в ресурсы
+            startSound = new SoundPlayer(Properties.Resources.gunshot); // Убедитесь, что музыка добавлена в ресурсы
             startSound.Play();
         }
 
         private void Birds()
         {
+            int speed1 = 5;
+            int speed2 = 8;
+            int speed3 = 13;
+
+            duck1.Left += speed1;
+            duck2.Left += speed2;
+            duck3.Left += speed3;
+
             if (duck1.Left > this.ClientSize.Width)
             {
                 duck1.Left = -duck1.Width;
@@ -89,9 +99,6 @@ namespace DuckHunt
                 duck3.Left = -duck3.Width;
                 duck3.Image = Properties.Resources._3;
             }
-            duck1.Left += 5;
-            duck2.Left += 8;
-            duck3.Left += 13;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -108,26 +115,28 @@ namespace DuckHunt
 
         private void duck1_Click(object sender, EventArgs e)
         {
+            if (key) return; // Проверка состояния игры
+
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck1.Image = Properties.Resources.end1;
-            Shoot();
             Hit();
-
         }
 
         private void duck2_Click(object sender, EventArgs e)
         {
+            if (key) return; // Проверка состояния игры
+
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck2.Image = Properties.Resources.end2;
-            Shoot();
             Hit();
         }
 
         private void duck3_Click(object sender, EventArgs e)
         {
+            if (key) return; // Проверка состояния игры
+
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck3.Image = Properties.Resources.end3;
-            Shoot();
             Hit();
         }
 

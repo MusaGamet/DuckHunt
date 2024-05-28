@@ -34,28 +34,28 @@
             startPictureBox = new PictureBox();
             lbl_kill = new Label();
             duck2 = new PictureBox();
-            duck3 = new PictureBox();
             duck1 = new PictureBox();
             ammo3 = new PictureBox();
             ammo0 = new PictureBox();
             ammo1 = new PictureBox();
             ammo2 = new PictureBox();
             game_over = new PictureBox();
+            duck3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)startPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)duck2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)duck3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)duck1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)game_over).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)duck3).BeginInit();
             SuspendLayout();
             // 
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Interval = 30;
+            timer1.Interval = 1;
             timer1.Tick += timer1_Tick;
             // 
             // startPictureBox
@@ -67,7 +67,9 @@
             // 
             // lbl_kill
             // 
+            lbl_kill.BackColor = Color.Transparent;
             resources.ApplyResources(lbl_kill, "lbl_kill");
+            lbl_kill.ForeColor = Color.Transparent;
             lbl_kill.Name = "lbl_kill";
             lbl_kill.UseWaitCursor = true;
             // 
@@ -80,15 +82,6 @@
             duck2.TabStop = false;
             duck2.UseWaitCursor = true;
             duck2.Click += duck2_Click;
-            // 
-            // duck3
-            // 
-            duck3.BackColor = Color.Transparent;
-            resources.ApplyResources(duck3, "duck3");
-            duck3.Name = "duck3";
-            duck3.TabStop = false;
-            duck3.UseWaitCursor = true;
-            duck3.Click += duck3_Click;
             // 
             // duck1
             // 
@@ -144,21 +137,31 @@
             game_over.TabStop = false;
             game_over.UseWaitCursor = true;
             // 
+            // duck3
+            // 
+            duck3.BackColor = Color.Transparent;
+            duck3.Image = Properties.Resources._3;
+            resources.ApplyResources(duck3, "duck3");
+            duck3.Name = "duck3";
+            duck3.TabStop = false;
+            duck3.UseWaitCursor = true;
+            duck3.Click += duck3_Click;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.background53;
+            BackgroundImage = Properties.Resources.background;
             Controls.Add(startPictureBox);
-            Controls.Add(duck1);
-            Controls.Add(duck3);
-            Controls.Add(duck2);
-            Controls.Add(game_over);
-            Controls.Add(lbl_kill);
             Controls.Add(ammo3);
             Controls.Add(ammo2);
             Controls.Add(ammo1);
             Controls.Add(ammo0);
+            Controls.Add(lbl_kill);
+            Controls.Add(game_over);
+            Controls.Add(duck2);
+            Controls.Add(duck1);
+            Controls.Add(duck3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -169,13 +172,13 @@
             MouseClick += Form1_MouseClick;
             ((System.ComponentModel.ISupportInitialize)startPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)duck2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)duck3).EndInit();
             ((System.ComponentModel.ISupportInitialize)duck1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo3).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo0).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo2).EndInit();
             ((System.ComponentModel.ISupportInitialize)game_over).EndInit();
+            ((System.ComponentModel.ISupportInitialize)duck3).EndInit();
             ResumeLayout(false);
         }
 
@@ -184,12 +187,12 @@
         private PictureBox startPictureBox;
         private Label lbl_kill;
         private PictureBox duck2;
-        private PictureBox duck3;
         private PictureBox duck1;
         private PictureBox ammo3;
         private PictureBox ammo0;
         private PictureBox ammo1;
         private PictureBox ammo2;
         private PictureBox game_over;
+        private PictureBox duck3;
     }
 }

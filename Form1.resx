@@ -4358,7 +4358,7 @@
 </value>
   </data>
   <data name="startPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>-3, 0</value>
   </data>
   <data name="startPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>813, 631</value>
@@ -4383,14 +4383,23 @@
   <data name="&gt;&gt;startPictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lbl_kill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Showcard Gothic, 13.8pt</value>
+  </data>
   <data name="lbl_kill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>665, 564</value>
   </data>
   <data name="lbl_kill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+    <value>114, 23</value>
   </data>
   <data name="lbl_kill.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>0</value>
+  </data>
+  <data name="lbl_kill.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_kill.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lbl_kill.Name" xml:space="preserve">
     <value>lbl_kill</value>
@@ -4408,7 +4417,7 @@
     <value>NoControl</value>
   </data>
   <data name="duck2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 251</value>
+    <value>151, 339</value>
   </data>
   <data name="duck2.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 62</value>
@@ -4429,82 +4438,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;duck2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="duck3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        DQKKmHKYDmien3OhCQA7
-</value>
-  </data>
-  <data name="duck3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="duck3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 75</value>
-  </data>
-  <data name="duck3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 62</value>
-  </data>
-  <data name="duck3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="duck3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;duck3.Name" xml:space="preserve">
-    <value>duck3</value>
-  </data>
-  <data name="&gt;&gt;duck3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;duck3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;duck3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="duck1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4558,7 +4492,7 @@
     <value>NoControl</value>
   </data>
   <data name="duck1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 165</value>
+    <value>474, 170</value>
   </data>
   <data name="duck1.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 62</value>
@@ -4579,7 +4513,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;duck1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>8</value>
   </data>
   <data name="ammo3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4606,7 +4540,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ammo3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>1</value>
   </data>
   <data name="ammo0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4633,7 +4567,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ammo0.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>4</value>
   </data>
   <data name="ammo1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4660,7 +4594,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ammo1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="ammo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4687,16 +4621,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ammo2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>2</value>
   </data>
   <data name="game_over.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="game_over.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, -1</value>
+    <value>282, 251</value>
   </data>
   <data name="game_over.Size" type="System.Drawing.Size, System.Drawing">
-    <value>805, 633</value>
+    <value>271, 97</value>
   </data>
   <data name="game_over.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
@@ -4714,7 +4648,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;game_over.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
+  </data>
+  <data name="duck3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="duck3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 62</value>
+  </data>
+  <data name="duck3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 62</value>
+  </data>
+  <data name="duck3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="duck3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;duck3.Name" xml:space="preserve">
+    <value>duck3</value>
+  </data>
+  <data name="&gt;&gt;duck3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;duck3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;duck3.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
