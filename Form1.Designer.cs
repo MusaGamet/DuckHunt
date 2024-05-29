@@ -39,7 +39,6 @@
             ammo0 = new PictureBox();
             ammo1 = new PictureBox();
             ammo2 = new PictureBox();
-            game_over = new PictureBox();
             duck3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)startPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)duck2).BeginInit();
@@ -48,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)ammo0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ammo2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)game_over).BeginInit();
             ((System.ComponentModel.ISupportInitialize)duck3).BeginInit();
             SuspendLayout();
             // 
@@ -128,15 +126,6 @@
             ammo2.TabStop = false;
             ammo2.UseWaitCursor = true;
             // 
-            // game_over
-            // 
-            game_over.BackColor = Color.Transparent;
-            game_over.Image = Properties.Resources.game_over;
-            resources.ApplyResources(game_over, "game_over");
-            game_over.Name = "game_over";
-            game_over.TabStop = false;
-            game_over.UseWaitCursor = true;
-            // 
             // duck3
             // 
             duck3.BackColor = Color.Transparent;
@@ -158,7 +147,6 @@
             Controls.Add(ammo1);
             Controls.Add(ammo0);
             Controls.Add(lbl_kill);
-            Controls.Add(game_over);
             Controls.Add(duck2);
             Controls.Add(duck1);
             Controls.Add(duck3);
@@ -177,7 +165,6 @@
             ((System.ComponentModel.ISupportInitialize)ammo0).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ammo2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)game_over).EndInit();
             ((System.ComponentModel.ISupportInitialize)duck3).EndInit();
             ResumeLayout(false);
         }
@@ -192,7 +179,6 @@
         private PictureBox ammo0;
         private PictureBox ammo1;
         private PictureBox ammo2;
-        private PictureBox game_over;
         private PictureBox duck3;
     }
 }

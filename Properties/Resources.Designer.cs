@@ -141,12 +141,32 @@ namespace DuckHunt.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_lose {
+            get {
+                object obj = ResourceManager.GetObject("background_lose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] crosshair {
             get {
                 object obj = ResourceManager.GetObject("crosshair", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon cursor_img {
+            get {
+                object obj = ResourceManager.GetObject("cursor_img", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -251,16 +271,6 @@ namespace DuckHunt.Properties {
         internal static System.Drawing.Bitmap Title_Screen {
             get {
                 object obj = ResourceManager.GetObject("Title_Screen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Tree {
-            get {
-                object obj = ResourceManager.GetObject("Tree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

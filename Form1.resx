@@ -4358,7 +4358,7 @@
 </value>
   </data>
   <data name="startPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 0</value>
+    <value>-2, 0</value>
   </data>
   <data name="startPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>813, 631</value>
@@ -4438,7 +4438,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;duck2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="duck1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4513,7 +4513,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;duck1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="ammo3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4623,33 +4623,6 @@
   <data name="&gt;&gt;ammo2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="game_over.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="game_over.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 251</value>
-  </data>
-  <data name="game_over.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 97</value>
-  </data>
-  <data name="game_over.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="game_over.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;game_over.Name" xml:space="preserve">
-    <value>game_over</value>
-  </data>
-  <data name="&gt;&gt;game_over.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;game_over.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;game_over.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="duck3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -4675,7 +4648,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;duck3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

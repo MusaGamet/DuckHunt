@@ -1,9 +1,9 @@
 using DuckHunt.Properties;
 using System.Media;
-using System.Linq;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using System.Reflection;
 
 namespace DuckHunt
 {
@@ -17,14 +17,16 @@ namespace DuckHunt
         {
             InitializeComponent();
             InitializeStartScreen();
-            this.DoubleBuffered = true; // Включение двойной буферизации
+            //this.DoubleBuffered = true;
+            //Cursor cur = new Cursor(Properties.Resources.cursor_img.Handle);
+            //this.Cursor = cur;
         }
 
         private void Game_Result()
         {
             if (key == true)
             {
-                game_over.Visible = true;
+                this.BackgroundImage = Properties.Resources.background_lose;
                 startSound = new SoundPlayer(Properties.Resources.lose);
                 startSound.PlayLooping();
                 timer1.Stop();
@@ -33,18 +35,17 @@ namespace DuckHunt
 
         private void InitializeStartScreen()
         {
-            // Инициализация и запуск музыки
             startSound = new SoundPlayer(Properties.Resources.start);
             startSound.PlayLooping();
 
             this.Controls.Add(startPictureBox);
             startPictureBox.BringToFront();
 
-            game_over.Visible = false;
-            lbl_kill.Text = "0"; // Начальное значение для счета убийств
+            lbl_kill.Text = "0";
 
             this.KeyDown += new KeyEventHandler(Form1_KeyDown);
         }
+        
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -64,13 +65,13 @@ namespace DuckHunt
 
         private void Hit()
         {
-            startSound = new SoundPlayer(Properties.Resources.duck_drop); // Убедитесь, что музыка добавлена в ресурсы
+            startSound = new SoundPlayer(Properties.Resources.duck_drop); 
             startSound.Play();
         }
 
         private void Shoot()
         {
-            startSound = new SoundPlayer(Properties.Resources.gunshot); // Убедитесь, что музыка добавлена в ресурсы
+            startSound = new SoundPlayer(Properties.Resources.gunshot); 
             startSound.Play();
         }
 
@@ -103,7 +104,6 @@ namespace DuckHunt
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Остановить таймер при загрузке формы
             timer1.Stop();
         }
 
@@ -115,7 +115,7 @@ namespace DuckHunt
 
         private void duck1_Click(object sender, EventArgs e)
         {
-            if (key) return; // Проверка состояния игры
+            if (key) return; 
 
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck1.Image = Properties.Resources.end1;
@@ -124,7 +124,7 @@ namespace DuckHunt
 
         private void duck2_Click(object sender, EventArgs e)
         {
-            if (key) return; // Проверка состояния игры
+            if (key) return; 
 
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck2.Image = Properties.Resources.end2;
@@ -133,7 +133,7 @@ namespace DuckHunt
 
         private void duck3_Click(object sender, EventArgs e)
         {
-            if (key) return; // Проверка состояния игры
+            if (key) return; 
 
             lbl_kill.Text = (int.Parse(lbl_kill.Text) + 500).ToString();
             duck3.Image = Properties.Resources.end3;
